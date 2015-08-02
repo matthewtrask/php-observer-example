@@ -1,5 +1,5 @@
 <?php
-abstract class Observeable{
+abstract class Observable{
     private $observers = array();
 
     /**
