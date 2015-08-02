@@ -18,7 +18,7 @@
 
 ## How does it work together
 
-### The [`Observer.php`](Observer.php) interface
+### The [`Observer`](Observer.php) interface
 
 An interface is a description of the actions that an object can do.
 
@@ -30,7 +30,7 @@ In [`Observer.php`](Observer.php#L8) we declare only one `public function newVal
 The [`FuelTankWarning.php`](FuelTankWarning.php#L17) and [`FuelDisplay.php`](FuelDisplay.php#L8) are implementing the [`Observer`](Observer.php) interface. 
 Have a look at the individual declarations of `function newValue($value){ ... }`.
 
-### The abstract class [`Observable.php`](Observable.php)
+### The abstract class [`Observable`](Observable.php)
 
 >"An abstract class is a class that is declared abstract [...]. 
 >Abstract classes cannot be instantiated, but they can be subclassed." [Oracle:Abstract Methods and Classes](https://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
