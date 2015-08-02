@@ -23,9 +23,13 @@ $fuelSensor->setFuelLevel(100);
 
 $fuelSensor->removeObserver($fuelTankWarning);
 $fuelSensor->removeObserver($fuelDisplay);
-// this may cause an error log entry
-//[DATE TIME] [error] [client IP] PHP Notice:  Undefined variable: thisIsNotExisting in Example.php on line 26
-$fuelSensor->removeObserver($thisIsNotExisting);
+
+/** This may cause an error log entry like this:
+ *  [DATE TIME] [error] [client IP] PHP Notice:  Undefined variable: thisIsNotExisting in Example.php on line 26
+ *  An Error is only caused because the variable $thisIsNotExisting is not existing.
+ *  removeObserver is just working fine.
+ */
+//$fuelSensor->removeObserver($thisIsNotExisting);
 
 // uncommend to throw Exception
 //$fuelSensor->setFuelLevel(101);
