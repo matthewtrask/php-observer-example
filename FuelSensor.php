@@ -1,5 +1,5 @@
 <?php
-class FuelSensor extends Observeable {
+class FuelSensor extends Observable {
     private $fuelLevel;
 
     /**
