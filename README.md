@@ -40,6 +40,28 @@ By this meaning it can make use of all functions of [`Observable.php`](Observabl
 In the example I've added a function called [`setFuelLevel`](FuelSensor.php#L10) to set the Fuel Level. It uses the [`notifyObserver`](FuelSensor.php#L12) function 
 from [`Observable`](Observable.php#L28) to notify the Observers.
 
+## Example
+
+```bash
+user@machine:/dir/# php5 Example.php 
+LED: off
+Your tank is filled to 80%
+
+LED: off
+Your tank is filled to 10%
+
+LED: on
+Your tank is filled to 5%
+
+LED: on
+Your tank is filled to 1%
+
+LED: off
+Your tank is filled to 100%
+
+
+```
+
 ## License 
 public domain
 
